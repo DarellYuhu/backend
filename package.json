@@ -5,15 +5,19 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "nodemon index.js"
+    "dev": "nodemon index.js",
+    "db:pull": "npx prisma db pull",
+    "db:migrate": "npx prisma migrate dev"
   },
   "author": "DarellYuhu",
   "license": "ISC",
   "dependencies": {
+    "@prisma/client": "^5.11.0",
     "express": "^4.18.3",
     "pg": "^8.11.3"
   },
   "devDependencies": {
-    "nodemon": "^3.1.0"
+    "nodemon": "^3.1.0",
+    "prisma": "^5.11.0"
   }
 }
